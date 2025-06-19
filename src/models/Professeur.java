@@ -3,6 +3,7 @@ package models;
 import java.util.Arrays;
 
 public class Professeur {
+    //MR Manque les finals sur les deux premiers attributs
     private String nom;
     private String prenom;
     private ModuleInfo[] modulesEnseignes;
@@ -10,6 +11,7 @@ public class Professeur {
     public Professeur(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
+        //MR Il faut crééer le tableau de modulesEnseignés à une taille de 0
         modulesEnseignes = null;
         
 
@@ -18,8 +20,10 @@ public class Professeur {
     public boolean enseigneCeModule(String nomDuModule) {
        boolean enseigneCeModule = false;
         for (int j = 0; j < modulesEnseignes.length; j++) {
+            //MR Pourquoi i ci-dessous ?
              if (modulesEnseignes[i] != null) {
                 enseigneCeModule = true;
+                //MR un petit break ici
        }
         }
       

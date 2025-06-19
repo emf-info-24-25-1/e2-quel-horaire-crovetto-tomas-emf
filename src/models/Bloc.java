@@ -2,6 +2,7 @@ package models;
 
 public class Bloc {
     public static final int NBRE_DEMI_JOURS_SEMAINES = 10;
+    //MR Les attributs peuvent être final
         private String nom;
         ModuleInfo[] modules;
     
